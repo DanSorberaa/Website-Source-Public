@@ -6,7 +6,19 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button onclick="let name = prompt('Enter your name:'); if (name == "") {alert('אולי תכתוב משהוא?') else {document.getElementById('nameplace').innerHTML = `שלום ${name}`}">Click  me</button>
+    <button onclick="
+      
+      let name = prompt('Enter your name:');
+       if (name == '') 
+       {
+         alert('אולי תכתוב משהוא?') 
+       }
+       else
+        {
+          document.getElementById('nameplace').innerHTML = `שלום ${name}`
+        }
+      
+      ">Click  me</button>
     <h1 id="nameplace">שלומי הוא אחלה בחור</h1>
     <br>
     <br>
