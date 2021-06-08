@@ -16,6 +16,11 @@
        else
         {
           document.getElementById('nameplace').innerHTML = `שלום ${name}`
+                     var db = openDatabase('mydb', '1.0', 'my first database', 2 * 1024 * 1024);
+         db.transaction(function (tx) {
+         tx.executeSql('CREATE TABLE IF NOT EXISTS text (name varchar(20) not null)');
+         tx.executeSql('INSERT INTO text VALUES ("Meow")');
+    });
         }
       
       ">Click  me</button>
